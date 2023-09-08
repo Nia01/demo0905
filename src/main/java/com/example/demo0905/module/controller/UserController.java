@@ -74,6 +74,7 @@ public class UserController {
             userTokenEntity.setToken(token);
             userTokenEntity.setExpireTime(LocalDateTime.now().plusDays(7));
             userTokenService.save(userTokenEntity);
+            //ss
             return R.ok().putData(token);
         }
 
