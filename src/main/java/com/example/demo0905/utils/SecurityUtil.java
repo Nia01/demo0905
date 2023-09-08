@@ -1,23 +1,16 @@
 package com.example.demo0905.utils;
 
-import cn.hutool.core.codec.Base64Decoder;
-import cn.hutool.core.codec.Base64Encoder;
 import cn.hutool.crypto.SecureUtil;
-import cn.hutool.crypto.digest.DigestUtil;
 import cn.hutool.crypto.symmetric.AES;
 import cn.hutool.jwt.JWT;
 import cn.hutool.jwt.JWTUtil;
 import com.example.demo0905.module.Entity.UserEntity;
-import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import sun.security.util.Password;
 
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Random;
 
 public class SecurityUtil {
     private static final String SALT="1234567812345678";
