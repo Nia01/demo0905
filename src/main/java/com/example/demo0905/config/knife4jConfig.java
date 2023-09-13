@@ -47,7 +47,6 @@ public class knife4jConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.example.demo0905.module.controller"))
                 .paths(PathSelectors.any())
-
                 .build()
                 .securitySchemes(security())
                 .securityContexts(securityContexts());
@@ -55,7 +54,7 @@ public class knife4jConfig {
     }
 
 
-    private static final String TITLE = "0905文档";
+    private static final String TITLE = "0905文档-1";
     private static final String DESC = "0905文档描述";
 
     public ApiInfo apiInfo(){

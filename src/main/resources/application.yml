@@ -14,8 +14,20 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+      #?????????
+    contentnegotiation:
+      favor-parameter: true
 
 knife4j:
   enable: true
+
+
+#notification:
+#  service: email
+
+notification:
+    service: sms
+
+
 
 
