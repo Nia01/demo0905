@@ -14,7 +14,7 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-      #?????????
+      #开启内容商议，返回的内容格式可以更改
     contentnegotiation:
       favor-parameter: true
 
